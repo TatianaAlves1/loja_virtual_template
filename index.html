@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>Loja Senac</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif   ;
+        }
+        nav{
+            width: 100%;
+            background-color: rgb(146, 146, 252);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            text-align: center;
+            padding: 10px;
+            flex-grow: 1;
+            align-self: center;
+        }
+        .logo-img{
+            width: 72px;
+            height: 72px;
+        }
+        logo-titulo{
+            text-align: center;
+        }
+        .menu-inicio{
+            list-style-type: none;
+            flex-grow: 4;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .menu-item{
+            font-size: 2rem;
+        }
+        .menu-link{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .menu-link:hover{
+            background-color: black;
+            color: yellow;
+            transition: 2s;
+
+        }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/img/logo.svg" alt="" class="logo-img">
+                <h3 class="logo-titulo">Loja Aulas</h3>
+            </div>
+            <ul class="menu-inicio">
+                <li class="menu-item"><a class="menu-link" href="#">link1</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">link2</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">link3</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">link4</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">link5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="slide-show">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/img/produtos/prod(1).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/produtos/prod(2).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/produtos/prod(3).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/produtos/prod(4).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/produtos/prod(5).jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/produtos/prod(6).jpg" alt=""></div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+             </div>
+        </section>
+        <section id="produtos-destaque">
+
+        </section>
+        <section id="lancamentos">
+
+        </section>
+    </main>
+    <footer>
+            <h4>Trabalho HTML e CSS</h4>
+    </footer>
+</body>
+ <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },
+    });
+  </script>
+</html>
