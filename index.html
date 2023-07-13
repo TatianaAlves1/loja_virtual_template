@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <title>Loja Senac</title>
     <style>
         *{
@@ -55,16 +54,27 @@
             transition: 2s;
 
         }
+        .slide-show{
+            padding: 1rem 0;
+            background-color: rgba(0, 0, 0, 0.229);
+        }
+        .slide-titulo{
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 20px;
+
+        }
 
     .swiper {
-      width: 100%;
-      height: 100%;
+      width: 60%;
+      height: 450px;
+      box-shadow: 1px 1px 20px black;
+      border-radius: 10px;
     }
 
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -72,9 +82,24 @@
 
     .swiper-slide img {
       display: block;
-      width: 50%;
-      height: 50%;
+      width: 100%;
+      height: 100%;
       object-fit: cover;
+    }
+    .produtos-destaque{
+        background-color: cornflowerblue;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 25px;
+    }
+    .destaque-item{
+        width: 250px;
+        height: 380px;
+        background-color: azure;
+    }
+    .destaque-img{
+        object-fit: cover;
+        width: 100%;
     }
     </style>
 </head>
@@ -96,6 +121,7 @@
     </header>
     <main>
         <section class="slide-show">
+            <h2 class="slide-titulo">Super Ofertas da Semana</h2>
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="assets/img/produtos/prod(1).jpg" alt=""></div>
@@ -109,7 +135,38 @@
              </div>
         </section>
         <section id="produtos-destaque">
-
+                <div class="destaque-item">
+                    <img src="assets/img/produtos/prod(1).jpg" class="destaque-img" alt="">
+                    <h3>Categorias</h3>
+                </div>
+                <div class="destaque-item">
+                    <img src="assets/img/produtos/prod(1).jpg" class="destaque-img" alt="">
+                    <h3>Categorias</h3>
+                </div>
+                <div class="destaque-item">
+                    <img src="assets/img/produtos/prod(1).jpg" class="destaque-img" alt="">
+                    <h3>Categorias</h3>
+                </div>
+                <div class="destaque-item">
+                    <img src="assets/img/produtos/prod(1).jpg" class="destaque-img" alt="">
+                    <h3>Categorias</h3>
+                </div>
+                <div class="destaque-item">
+                    <img src="assets/img/produtos/prod(1).jpg" class="destaque-img" alt="">
+                    <h3>Categorias</h3>
+                </div>
+                <div class="destaque-item">
+                    <img src="" alt="">
+                    <h3>Categorias</h3>
+                </div>
+                <div class="destaque-item">
+                    <img src="" alt="">
+                    <h3>Categorias</h3>
+                </div>
+                <div class="destaque-item">
+                    <img src="" alt="">
+                    <h3></h3>
+                </div>
         </section>
         <section id="lancamentos">
 
@@ -118,7 +175,7 @@
     <footer>
             <h4>Trabalho HTML e CSS</h4>
     </footer>
-</body>
+
  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
@@ -127,8 +184,13 @@
     var swiper = new Swiper(".mySwiper", {
       scrollbar: {
         el: ".swiper-scrollbar",
-        hide: true,
+        hide: true
+        },
+        autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
       },
     });
   </script>
+</body>
 </html>
