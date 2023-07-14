@@ -87,19 +87,23 @@
       object-fit: cover;
     }
     .produtos-destaque{
-        background-color: cornflowerblue;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 25px;
+            width:inherit;
+            padding:25px;display:grid;
+            grid-template-columns:repeat(4,450px);
+            align-items:center;
+            justify-content:space-evenly;
+            gap:15px
     }
     .destaque-item{
-        width: 250px;
-        height: 380px;
+        width:380px;
+        height:180px;
+        border: 1px solid black;
         background-color: azure;
     }
     .destaque-img{
         object-fit: cover;
         width: 100%;
+        height: 50px;
     }
     </style>
 </head>
